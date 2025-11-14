@@ -38,7 +38,7 @@ pelican --listen
     http://127.0.0.1:8000
 ```
 
-### Publish
+### Publish (first time)
 ```
 python make.py
 
@@ -51,6 +51,19 @@ select "Deploy from  branch"
 Go to branch on the same page
 
 select "main" branch and "docs" folder
+```
+
+### Publish (second time onwards)
+```
+python make.py
+
+pelican content
+
+git add .
+
+git commit -m "<change details>"
+
+git push
 ```
 
 ![1731731240445](image/README/1731731240445.png)
